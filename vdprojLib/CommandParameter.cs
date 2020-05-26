@@ -8,12 +8,15 @@ namespace Antares.BuildTools
         [Option('i', "input")]
         [Required(AllowEmptyStrings = false)]
         [FileExists]
-        public string SourceFilePath { get; set; }
+        public string InputFilePath { get; set; }
 
         [Option('o', "output")]
         [Required(AllowEmptyStrings = false)]
         [FilePath]
         public string OutputFilePath { get; set; }
+
+        [Option('v', "overwrite")]
+        public bool Overwrite { get; set; }
     }
 }
 
