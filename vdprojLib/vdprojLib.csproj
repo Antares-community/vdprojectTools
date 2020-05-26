@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>Antares community</Authors>
+    <Company>Antares communityAntares community</Company>
+    <Product>Antares build support tools.</Product>
+    <Description>This is a library for the VDPROJ conversion tool.</Description>
+    <Copyright>Copyright © Antares community 2020</Copyright>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RootNamespace>Antares.BuildTools</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+  </ItemGroup>
+
+</Project>
