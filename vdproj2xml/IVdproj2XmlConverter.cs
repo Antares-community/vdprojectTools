@@ -4,6 +4,6 @@
     {
         CommandParameter Parameter { get; set; }
 
-        void Convert();
+        int Convert();
     }
 }

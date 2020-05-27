@@ -1,0 +1,10 @@
+﻿"Test1"
+{
+    "Test2"
+    {
+    "IntegerValue" = "3:123"
+    "StringValue" = "8:sampletext"
+    "BooleanValue" = "11:FALSE"
+    "ByteValue" = "2:1"
+    }
+}

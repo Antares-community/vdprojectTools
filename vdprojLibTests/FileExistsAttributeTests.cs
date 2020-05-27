@@ -14,7 +14,7 @@ namespace Antares.BuildTools.Tests
         public class Test
         {
             [FileExists]
-            public string File { get; set; }
+            public string TestProperty { get; set; }
         }
 
         [TestMethod()]
@@ -22,16 +22,16 @@ namespace Antares.BuildTools.Tests
         {
             var test = new Test
             {
-                File = Guid.NewGuid().ToString(),
+                TestProperty = Guid.NewGuid().ToString(),
             };
 
             var context = new ValidationContext(test)
             {
-                MemberName = nameof(Test.File),
+                MemberName = nameof(Test.TestProperty),
             };
             var list = new List<ValidationResult>();
             var isValid = Validator.TryValidateProperty(
-                test,
+                test.TestProperty,
                 context,
                 list);
 
@@ -44,16 +44,16 @@ namespace Antares.BuildTools.Tests
         {
             var test = new Test
             {
-                File = Process.GetCurrentProcess().MainModule.FileName,
+                TestProperty = Process.GetCurrentProcess().MainModule.FileName,
             };
 
             var context = new ValidationContext(test)
             {
-                MemberName = nameof(Test.File),
+                MemberName = nameof(Test.TestProperty),
             };
             var list = new List<ValidationResult>();
             var isValid = Validator.TryValidateProperty(
-                test,
+                test.TestProperty,
                 context,
                 list);
 

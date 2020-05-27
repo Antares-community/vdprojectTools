@@ -67,7 +67,7 @@ namespace Antares.BuildTools.Tests
                 var parameter = new CommandParameter
                 {
                     InputFilePath = i,
-                    OutputFilePath = "<>::",
+                    OutputFilePath = "",
                 };
 
                 var errors = new List<ValidationResult>();
@@ -77,54 +77,6 @@ namespace Antares.BuildTools.Tests
                     errors);
                 Assert.IsFalse(isValid);
                 Assert.AreEqual(1, errors.Count);
-            }
-            finally
-            {
-                if (File.Exists(i))
-                {
-                    File.Delete(i);
-                }
-            }
-        }
-
-        [TestMethod()]
-        public void Validate_Commandline_Parameter_Test02()
-        {
-            var parameter = new CommandParameter
-            {
-                InputFilePath = Guid.NewGuid().ToString(),
-                OutputFilePath = "test",
-            };
-
-            var errors = new List<ValidationResult>();
-            var isValid = Validator.TryValidateObject(
-                parameter,
-                new ValidationContext(parameter),
-                errors);
-            Assert.IsFalse(isValid);
-            Assert.AreEqual(1, errors.Count);
-        }
-
-        [TestMethod()]
-        public void Validate_Commandline_Parameter_Test03()
-        {
-            string i = "";
-            try
-            {
-                i = Path.GetTempFileName();
-                var parameter = new CommandParameter
-                {
-                    InputFilePath = i,
-                    OutputFilePath = "test",
-                };
-
-                var errors = new List<ValidationResult>();
-                var isValid = Validator.TryValidateObject(
-                    parameter,
-                    new ValidationContext(parameter),
-                    errors);
-                Assert.IsTrue(isValid);
-                Assert.AreEqual(0, errors.Count);
             }
             finally
             {
