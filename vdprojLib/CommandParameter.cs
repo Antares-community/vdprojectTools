@@ -6,7 +6,6 @@ namespace Antares.BuildTools
     public class CommandParameter
     {
         [Option('i', "input")]
-        [FileExists]
         public string InputFilePath { get; set; }
 
         [Option('o', "output")]

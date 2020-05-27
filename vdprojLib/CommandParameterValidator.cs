@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 
 namespace Antares.BuildTools
 {
-    public class CommandParameterValidator : ICommandParameterValidator
+    public class CommandParameterValidator
     {
         public ValidatedCommandParameter Validate(CommandParameter rawParameter)
         {
@@ -18,7 +19,10 @@ namespace Antares.BuildTools
                 string.IsNullOrWhiteSpace(rawParameter.OutputFilePath) ||
                 File.Exists(rawParameter.InputFilePath) == false)
             {
-                throw new CommandlineParseException(Properties.Resources.CommandlineHelpMessage);
+                throw new CommandlineParseException(
+                    string.Format(
+                        Properties.Resources.CommandlineHelpMessage,
+                        Process.GetCurrentProcess().ProcessName));
             }
 
             return new ValidatedCommandParameter

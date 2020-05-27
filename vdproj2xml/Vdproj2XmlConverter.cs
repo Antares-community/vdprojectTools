@@ -8,13 +8,13 @@ using System.Xml;
 
 namespace Antares.BuildTools
 {
-    public class Vdproj2XmlConverter : IVdproj2XmlConverter
+    public class Vdproj2XmlConverter 
     {
         public CommandParameter Parameter { get; set; }
 
-        public ICommandParameterValidator CommandParameterValidator { get; set; } = new CommandParameterValidator();
+        public CommandParameterValidator CommandParameterValidator { get; set; } = new CommandParameterValidator();
 
-        public IInternalVdproj2XmlConverter InternalVdproj2XmlConverter { get; set; } = new InternalVdproj2XmlConverter();
+        public InternalVdproj2XmlConverter InternalVdproj2XmlConverter { get; set; } = new InternalVdproj2XmlConverter();
 
         public int Convert()
         {

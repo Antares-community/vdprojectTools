@@ -6,7 +6,7 @@ using System.Xml;
 
 namespace Antares.BuildTools
 {
-    public class InternalVdproj2XmlConverter : IInternalVdproj2XmlConverter
+    public class InternalVdproj2XmlConverter
     {
         private readonly Regex regex = new Regex("\\\"(?<label>[^\\\"]+)\\\" = \\\"(?<type>\\d+)\\:(?<val>.*)\\\"", RegexOptions.Compiled);
         public ValidatedCommandParameter ValidatedParameter { get; set; }
@@ -17,7 +17,7 @@ namespace Antares.BuildTools
 
             using (var outputStream = ValidatedParameter.OutputFile.Open(outputFileMode, FileAccess.Write))
             {
-                using (var xmlWriter = XmlWriter.Create(outputStream))
+                using (var xmlWriter = XmlWriter.Create(outputStream, new XmlWriterSettings { Indent = true }))
                 {
                     Convert(xmlWriter);
                 }
@@ -27,10 +27,12 @@ namespace Antares.BuildTools
 
         private void Convert(XmlWriter xmlWriter)
         {
+            xmlWriter.WriteStartDocument();
             using (var streamReader = ValidatedParameter.InputFile.OpenText())
             {
                 Convert(streamReader, xmlWriter);
             }
+            xmlWriter.WriteEndDocument();
         }
 
         private void Convert(StreamReader streamReader, XmlWriter xmlWriter)
@@ -55,7 +57,8 @@ namespace Antares.BuildTools
                 }
                 else if (line != "{")
                 {
-                    xmlWriter.WriteStartElement(line.Trim('"'));
+                    xmlWriter.WriteStartElement("Node");
+                    xmlWriter.WriteAttributeString("Name", line.Trim('"'));
                 }
             }
         }

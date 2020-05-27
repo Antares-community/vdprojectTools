@@ -56,36 +56,6 @@ namespace Antares.BuildTools.Tests
             Assert.AreEqual(o, parameter.OutputFilePath);
             Assert.AreEqual(true, parameter.Overwrite);
         }
-
-        [TestMethod()]
-        public void Validate_Commandline_Parameter_Test01()
-        {
-            string i = "";
-            try
-            {
-                i = Path.GetTempFileName();
-                var parameter = new CommandParameter
-                {
-                    InputFilePath = i,
-                    OutputFilePath = "",
-                };
-
-                var errors = new List<ValidationResult>();
-                var isValid = Validator.TryValidateObject(
-                    parameter,
-                    new ValidationContext(parameter),
-                    errors);
-                Assert.IsFalse(isValid);
-                Assert.AreEqual(1, errors.Count);
-            }
-            finally
-            {
-                if (File.Exists(i))
-                {
-                    File.Delete(i);
-                }
-            }
-        }
     }
 }
 

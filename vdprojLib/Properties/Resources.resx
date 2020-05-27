@@ -118,6 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CommandlineHelpMessage" xml:space="preserve">
-    <value />
+    <value>Usage: {0}.exe -i "/path/to/inputfile" -o "/path/to/outputfile" [options]
+
+Options:
+  -v   Specify this option if you want to overwrite the output file.
+  -s   Specify this option if you want to split the value and type.
+
+Examples:
+ 1) {0}.exe -i abc.vdproj def.xml
+ 2) {0}.exe -i abc.vdproj def.xml -v
+ 3) {0}.exe -i abc.vdproj def.xml -s
+ 4) {0}.exe -i abc.vdproj def.xml -v -s</value>
   </data>
 </root>

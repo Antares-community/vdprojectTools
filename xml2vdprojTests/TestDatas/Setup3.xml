@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Node Name="DeployProject">
+  <VSVersion Value="3:800" />
+  <ProjectType Value="8:{978C614F-708E-4E1A-B201-565925725DBA}" />
+  <IsWebType Value="8:FALSE" />
+  <ProjectName Value="8:Setup1" />
+  <LanguageId Value="3:1041" />
+  <CodePage Value="3:932" />
+  <UILanguageId Value="3:1041" />
+  <SccProjectName Value="8:" />
+  <SccLocalPath Value="8:" />
+  <SccAuxPath Value="8:" />
+  <SccProvider Value="8:" />
+  <Node Name="Hierarchy" />
+  <Node Name="Configurations">
+    <Node Name="Debug">
+      <DisplayName Value="8:Debug" />
+      <IsDebugOnly Value="11:TRUE" />
+      <IsReleaseOnly Value="11:FALSE" />
+      <OutputFilename Value="8:Debug\\Setup1.msi" />
+      <PackageFilesAs Value="3:2" />
+      <PackageFileSize Value="3:-2147483648" />
+      <CabType Value="3:1" />
+      <Compression Value="3:2" />
+      <SignOutput Value="11:FALSE" />
+      <CertificateFile Value="8:" />
+      <PrivateKeyFile Value="8:" />
+      <TimeStampServer Value="8:" />
+      <InstallerBootstrapper Value="3:2" />
+    </Node>
+    <Node Name="Release">
+      <DisplayName Value="8:Release" />
+      <IsDebugOnly Value="11:FALSE" />
+      <IsReleaseOnly Value="11:TRUE" />
+      <OutputFilename Value="8:Release\\Setup1.msi" />
+      <PackageFilesAs Value="3:2" />
+      <PackageFileSize Value="3:-2147483648" />
+      <CabType Value="3:1" />
+      <Compression Value="3:2" />
+      <SignOutput Value="11:FALSE" />
+      <CertificateFile Value="8:" />
+      <PrivateKeyFile Value="8:" />
+      <TimeStampServer Value="8:" />
+      <InstallerBootstrapper Value="3:2" />
+    </Node>
+  </Node>
+  <Node Name="Deployable">
+    <Node Name="CustomAction" />
+    <Node Name="DefaultFeature">
+      <Name Value="8:DefaultFeature" />
+      <Title Value="8:" />
+      <Description Value="8:" />
+    </Node>
+    <Node Name="ExternalPersistence">
+      <Node Name="LaunchCondition" />
+    </Node>
+    <Node Name="File" />
+    <Node Name="FileType" />
+    <Node Name="Folder">
+      <Node Name="{1525181F-901A-416C-8A58-119130FE478E}:_9C9F86BD17014BD38E0A3AB2A6822E1A">
+        <Name Value="8:#1916" />
+        <AlwaysCreate Value="11:FALSE" />
+        <Condition Value="8:" />
+        <Transitive Value="11:FALSE" />
+        <Property Value="8:DesktopFolder" />
+        <Node Name="Folders" />
+      </Node>
+      <Node Name="{1525181F-901A-416C-8A58-119130FE478E}:_D0AFBF2449EC4681B8BAB6FBDEE27D2C">
+        <Name Value="8:#1919" />
+        <AlwaysCreate Value="11:FALSE" />
+        <Condition Value="8:" />
+        <Transitive Value="11:FALSE" />
+        <Property Value="8:ProgramMenuFolder" />
+        <Node Name="Folders" />
+      </Node>
+      <Node Name="{3C67513D-01DD-4637-8A68-80971EB9504F}:_E5E341FC067C4CAE9F7D45816FB168D3">
+        <DefaultLocation Value="8:[ProgramFilesFolder][Manufacturer]\\[ProductName]" />
+        <Name Value="8:#1925" />
+        <AlwaysCreate Value="11:FALSE" />
+        <Condition Value="8:" />
+        <Transitive Value="11:FALSE" />
+        <Property Value="8:TARGETDIR" />
+        <Node Name="Folders" />
+      </Node>
+    </Node>
+    <Node Name="LaunchCondition" />
+    <Node Name="Locator" />
+    <Node Name="MsiBootstrapper">
+      <LangId Value="3:1041" />
+      <RequiresElevation Value="11:FALSE" />
+    </Node>
+    <Node Name="Product">
+      <Name Value="8:Microsoft Visual Studio" />
+      <ProductName Value="8:Setup1" />
+      <ProductCode Value="8:{3F2FD7EA-6CB8-4741-87F1-2680746841DE}" />
+      <PackageCode Value="8:{F5FF12B3-0395-4428-8CEE-1340DA7BADE3}" />
+      <UpgradeCode Value="8:{DCF3D3B9-4C83-4108-AD26-80CB63A4975B}" />
+      <AspNetVersion Value="8:4.0.30319.0" />
+      <RestartWWWService Value="11:FALSE" />
+      <RemovePreviousVersions Value="11:FALSE" />
+      <DetectNewerInstalledVersion Value="11:TRUE" />
+      <InstallAllUsers Value="11:FALSE" />
+      <ProductVersion Value="8:1.0.0" />
+      <Manufacturer Value="8:Default Company Name" />
+      <ARPHELPTELEPHONE Value="8:" />
+      <ARPHELPLINK Value="8:" />
+      <Title Value="8:Setup1" />
+      <Subject Value="8:" />
+      <ARPCONTACT Value="8:Default Company Name" />
+      <Keywords Value="8:" />
+      <ARPCOMMENTS Value="8:" />
+      <ARPURLINFOABOUT Value="8:" />
+      <ARPPRODUCTICON Value="8:" />
+      <ARPIconIndex Value="3:0" />
+      <SearchPath Value="8:" />
+      <UseSystemSearchPath Value="11:TRUE" />
+      <TargetPlatform Value="3:0" />
+      <PreBuildEvent Value="8:" />
+      <PostBuildEvent Value="8:" />
+      <RunPostBuildEvent Value="3:0" />
+    </Node>
+    <Node Name="Registry">
+      <Node Name="HKLM">
+        <Node Name="Keys">
+          <Node Name="{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_F27931D75C2C4F6DB6E72A9E47DB6FB9">
+            <Name Value="8:Software" />
+            <Condition Value="8:" />
+            <AlwaysCreate Value="11:FALSE" />
+            <DeleteAtUninstall Value="11:FALSE" />
+            <Transitive Value="11:FALSE" />
+            <Node Name="Keys">
+              <Node Name="{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C70D1B73CB5B44219B9442A84CF42F37">
+                <Name Value="8:[Manufacturer]" />
+                <Condition Value="8:" />
+                <AlwaysCreate Value="11:FALSE" />
+                <DeleteAtUninstall Value="11:FALSE" />
+                <Transitive Value="11:FALSE" />
+                <Node Name="Keys" />
+                <Node Name="Values" />
+              </Node>
+            </Node>
+            <Node Name="Values" />
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="HKCU">
+        <Node Name="Keys">
+          <Node Name="{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_88821D75845A49DE8660619EA804832F">
+            <Name Value="8:Software" />
+            <Condition Value="8:" />
+            <AlwaysCreate Value="11:FALSE" />
+            <DeleteAtUninstall Value="11:FALSE" />
+            <Transitive Value="11:FALSE" />
+            <Node Name="Keys">
+              <Node Name="{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_9DF7E332FB4A4315A31B18F7EB0BEB5E">
+                <Name Value="8:[Manufacturer]" />
+                <Condition Value="8:" />
+                <AlwaysCreate Value="11:FALSE" />
+                <DeleteAtUninstall Value="11:FALSE" />
+                <Transitive Value="11:FALSE" />
+                <Node Name="Keys" />
+                <Node Name="Values" />
+              </Node>
+            </Node>
+            <Node Name="Values" />
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="HKCR">
+        <Node Name="Keys" />
+      </Node>
+      <Node Name="HKU">
+        <Node Name="Keys" />
+      </Node>
+      <Node Name="HKPU">
+        <Node Name="Keys" />
+      </Node>
+    </Node>
+    <Node Name="Sequences" />
+    <Node Name="Shortcut" />
+    <Node Name="UserInterface">
+      <Node Name="{DF760B10-853B-4699-99F2-AFF7185B4A62}:_4AF62108467D442493BB924B6346FEE9">
+        <Name Value="8:#1902" />
+        <Sequence Value="3:2" />
+        <Attributes Value="3:3" />
+        <Node Name="Dialogs">
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7F05599DF64C4167A08DC2C938865504">
+            <Sequence Value="3:100" />
+            <DisplayName Value="8:完了" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdAdminFinishedDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="{DF760B10-853B-4699-99F2-AFF7185B4A62}:_5CF0280631154DEC8C250081C8BCECBF">
+        <Name Value="8:#1900" />
+        <Sequence Value="3:2" />
+        <Attributes Value="3:1" />
+        <Node Name="Dialogs">
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3A22BDA9542A4C03943E18635A90C751">
+            <Sequence Value="3:200" />
+            <DisplayName Value="8:インストール フォルダー" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdAdminFolderDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F2916B7D9D9B4BDCB140FCB926A1AFB6">
+            <Sequence Value="3:300" />
+            <DisplayName Value="8:インストールの確認" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdAdminConfirmDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_FA9114E55A504CDB9A3EBE7A4E469E69">
+            <Sequence Value="3:100" />
+            <DisplayName Value="8:ようこそ" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdAdminWelcomeDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="CopyrightWarning">
+                <Name Value="8:CopyrightWarning" />
+                <DisplayName Value="8:#1002" />
+                <Description Value="8:#1102" />
+                <Type Value="3:3" />
+                <ContextData Value="8:" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:1" />
+                <Value Value="8:#1202" />
+                <DefaultValue Value="8:#1202" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="Welcome">
+                <Name Value="8:Welcome" />
+                <DisplayName Value="8:#1003" />
+                <Description Value="8:#1103" />
+                <Type Value="3:3" />
+                <ContextData Value="8:" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:1" />
+                <Value Value="8:#1203" />
+                <DefaultValue Value="8:#1203" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="{DF760B10-853B-4699-99F2-AFF7185B4A62}:_5CF5C1248C134E9B88042BB4AE412F2C">
+        <Name Value="8:#1901" />
+        <Sequence Value="3:2" />
+        <Attributes Value="3:2" />
+        <Node Name="Dialogs">
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BBEDB4AD8F0E4DFB88405066CAC07E9D">
+            <Sequence Value="3:100" />
+            <DisplayName Value="8:進行状況" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdAdminProgressDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="ShowProgress">
+                <Name Value="8:ShowProgress" />
+                <DisplayName Value="8:#1009" />
+                <Description Value="8:#1109" />
+                <Type Value="3:5" />
+                <ContextData Value="8:1;True=1;False=0" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:0" />
+                <Value Value="3:1" />
+                <DefaultValue Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="{DF760B10-853B-4699-99F2-AFF7185B4A62}:_66501EB1971F4633AC4BAC495B3B17C4">
+        <Name Value="8:#1901" />
+        <Sequence Value="3:1" />
+        <Attributes Value="3:2" />
+        <Node Name="Dialogs">
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CF9A767706644B0381BB5502CA9B246D">
+            <Sequence Value="3:100" />
+            <DisplayName Value="8:進行状況" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdProgressDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="ShowProgress">
+                <Name Value="8:ShowProgress" />
+                <DisplayName Value="8:#1009" />
+                <Description Value="8:#1109" />
+                <Type Value="3:5" />
+                <ContextData Value="8:1;True=1;False=0" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:0" />
+                <Value Value="3:1" />
+                <DefaultValue Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="{DF760B10-853B-4699-99F2-AFF7185B4A62}:_7544BE32FD584D6FBCF69C5C12FCABDD">
+        <Name Value="8:#1902" />
+        <Sequence Value="3:1" />
+        <Attributes Value="3:3" />
+        <Node Name="Dialogs">
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_87A7F50A1B1D46ACACA7E23EC84B3EEE">
+            <Sequence Value="3:100" />
+            <DisplayName Value="8:完了" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdFinishedDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="UpdateText">
+                <Name Value="8:UpdateText" />
+                <DisplayName Value="8:#1058" />
+                <Description Value="8:#1158" />
+                <Type Value="3:15" />
+                <ContextData Value="8:" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:1" />
+                <Value Value="8:#1258" />
+                <DefaultValue Value="8:#1258" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_9E560461EB3E4815A2584CF6C3E65E42">
+        <UseDynamicProperties Value="11:FALSE" />
+        <IsDependency Value="11:FALSE" />
+        <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdBasicDialogs.wim" />
+      </Node>
+      <Node Name="{DF760B10-853B-4699-99F2-AFF7185B4A62}:_C441F668A95941FB87476F8E65E736A1">
+        <Name Value="8:#1900" />
+        <Sequence Value="3:1" />
+        <Attributes Value="3:1" />
+        <Node Name="Dialogs">
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_24A2391BA085497BA361B2C30F4CA9EC">
+            <Sequence Value="3:200" />
+            <DisplayName Value="8:インストール フォルダー" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdFolderDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="InstallAllUsersVisible">
+                <Name Value="8:InstallAllUsersVisible" />
+                <DisplayName Value="8:#1059" />
+                <Description Value="8:#1159" />
+                <Type Value="3:5" />
+                <ContextData Value="8:1;True=1;False=0" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:0" />
+                <Value Value="3:1" />
+                <DefaultValue Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4F7F546B7894423D8815EBF68FD1CF61">
+            <Sequence Value="3:100" />
+            <DisplayName Value="8:ようこそ" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdWelcomeDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="CopyrightWarning">
+                <Name Value="8:CopyrightWarning" />
+                <DisplayName Value="8:#1002" />
+                <Description Value="8:#1102" />
+                <Type Value="3:3" />
+                <ContextData Value="8:" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:1" />
+                <Value Value="8:#1202" />
+                <DefaultValue Value="8:#1202" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+              <Node Name="Welcome">
+                <Name Value="8:Welcome" />
+                <DisplayName Value="8:#1003" />
+                <Description Value="8:#1103" />
+                <Type Value="3:3" />
+                <ContextData Value="8:" />
+                <Attributes Value="3:0" />
+                <Setting Value="3:1" />
+                <Value Value="8:#1203" />
+                <DefaultValue Value="8:#1203" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+          <Node Name="{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BD9CAABD2B0843A6BD8A23C19B756FA8">
+            <Sequence Value="3:300" />
+            <DisplayName Value="8:インストールの確認" />
+            <UseDynamicProperties Value="11:TRUE" />
+            <IsDependency Value="11:FALSE" />
+            <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdConfirmDlg.wid" />
+            <Node Name="Properties">
+              <Node Name="BannerBitmap">
+                <Name Value="8:BannerBitmap" />
+                <DisplayName Value="8:#1001" />
+                <Description Value="8:#1101" />
+                <Type Value="3:8" />
+                <ContextData Value="8:Bitmap" />
+                <Attributes Value="3:4" />
+                <Setting Value="3:1" />
+                <UsePlugInResources Value="11:TRUE" />
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node Name="{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_DF0E8FF93D694F5D8A547B90AF8B6B8A">
+        <UseDynamicProperties Value="11:FALSE" />
+        <IsDependency Value="11:FALSE" />
+        <SourcePath Value="8:&lt;VsdDialogDir&gt;\\VsdUserInterface.wim" />
+      </Node>
+    </Node>
+    <Node Name="MergeModule" />
+    <Node Name="ProjectOutput" />
+  </Node>
+</Node>

@@ -61,7 +61,17 @@ namespace Antares.BuildTools.Properties {
         }
         
         /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
+        ///   Usage: {0}.exe -i &quot;/path/to/inputfile&quot; -o &quot;/path/to/outputfile&quot; [options]
+        ///
+        ///Options:
+        ///  -v   Specify this option if you want to overwrite the output file.
+        ///  -s   Specify this option if you want to split the value and type.
+        ///
+        ///Examples:
+        /// 1) {0}.exe -i abc.vdproj def.xml
+        /// 2) {0}.exe -i abc.vdproj def.xml -v
+        /// 3) {0}.exe -i abc.vdproj def.xml -s
+        /// 4) {0}.exe -i abc.vdproj def.xml -v -s に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string CommandlineHelpMessage {
             get {
